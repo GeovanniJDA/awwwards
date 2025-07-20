@@ -14,17 +14,18 @@ const Hero = () => {
   const [hasClicked, setHasClicked] = useState(false);
 
   const [loading, setLoading] = useState(true);
-  const [loadedVideos, setLoadedVideos] = useState(false);
+  const [loadedVideos, setLoadedVideos] = useState(0);
 
   const totalVideos = 4;
   const nextVdRef = useRef(null);
+  const currentVdRef = useRef(null);
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
   };
 
   useEffect(() => {
-    if (loadedVideos === totalVideos - 1) {
+    if (loadedVideos === 3) {
       setLoading(false);
     }
   }, [loadedVideos]);
@@ -107,7 +108,7 @@ const Hero = () => {
                 className="origin-center scale-50 opacity-0 transition-all duration-500 ease-in hover:scale-100 hover:opacity-100"
               >
                 <video
-                  ref={nextVdRef}
+                  ref={currentVdRef}
                   src={getVideoSrc(upComingVideos)}
                   loop
                   muted
