@@ -66,3 +66,5 @@ Curtiu a ideia? Junte-se e ajude a construir a nova era dos games! Sinta-se livr
 ---
 
 > **Vamos juntos construir a próxima era do universo gamer!**
+
+✨ Construa este projeto passo a passo com nosso tutorial detalhado no <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Junte-se à família JSM!✨
