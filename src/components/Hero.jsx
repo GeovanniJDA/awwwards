@@ -44,14 +44,14 @@ const Hero = () => {
           scale: 1,
           width: "100%",
           height: "100%",
-          duration: 1,
+          duration: 0.9,
           ease: "power1.inOut",
           onStart: () => nextVdRef.current.play(),
         });
         gsap.from("#current-video", {
           transformOrigin: "center center",
           scale: 0,
-          duration: 1.5,
+          duration: 1.3,
           ease: "power1.inOut",
         });
       }
@@ -86,7 +86,6 @@ const Hero = () => {
     <div className="relative h-dvh w-screen overflow-x-hidden">
       {loading && (
         <div className="flex-center absolute z-[100] h-dvh w-screen overflow-hidden bg-violet-50">
-          {/* https://uiverse.io/G4b413l/tidy-walrus-92 */}
           <div className="three-body">
             <div className="three-body__dot"></div>
             <div className="three-body__dot"></div>
